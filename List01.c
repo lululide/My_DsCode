@@ -1,5 +1,18 @@
-/*¸ø¶¨Ò»¸ö n ¸öÔªËØÓĞĞòµÄ£¨ÉıĞò£©ÕûĞÍÊı×é nums ºÍÒ»¸öÄ¿±êÖµ target,
-Ğ´Ò»¸öº¯ÊıËÑË÷ nums ÖĞµÄ target£¬Èç¹ûÄ¿±êÖµ´æÔÚ·µ»ØÏÂ±ê£¬·ñÔò·µ»Ø -1¡£*/
+/*ç»™å®šä¸€ä¸ª n ä¸ªå…ƒç´ æœ‰åºçš„ï¼ˆå‡åºï¼‰æ•´å‹æ•°ç»„ nums å’Œä¸€ä¸ªç›®æ ‡å€¼ target,
+å†™ä¸€ä¸ªå‡½æ•°æœç´¢ nums ä¸­çš„ targetï¼Œå¦‚æœç›®æ ‡å€¼å­˜åœ¨è¿”å›ä¸‹æ ‡ï¼Œå¦åˆ™è¿”å› -1ã€‚*/
+
+// int search(int* nums, int numsSize, int target) {
+//     int low = 0,high = numsSize-1,mid;
+//     while(low <= high){
+//         mid = (low+high)/2;
+//         if(nums[mid] == target)
+//             return mid;
+//         else if(nums[mid]<target)
+//             low = mid+1;
+//         else high = mid-1;
+//     }
+//     return -1;
+// }
 
 #include <stdio.h>
 #define maxsise 50
@@ -34,6 +47,6 @@ int main() {
 	Sqlist L = { { 2,4,5,7,8,20 } ,6};
 	print(L);
 	int index = binsearch(L, 5);
-	printf("Ä¿±êÖµµÄË÷ÒıÎª£º%d", index);
+	printf("ç›®æ ‡å€¼çš„ç´¢å¼•ä¸ºï¼š%d", index);
 	return 0;
 }
